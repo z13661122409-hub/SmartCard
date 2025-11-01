@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "SmartCard — On-device AI",
+  "version": "0.1.0",
+  "description": "Select text → summarize / translate locally with Chrome built-in AI.",
+  "default_locale": "en",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_title": "SmartCard" },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "css": ["styles.css"],
+    "run_at": "document_idle"
+  }],
+  "web_accessible_resources": [{
+    "resources": ["inpage.js"],
+    "matches": ["<all_urls>"]
+  }]
+}

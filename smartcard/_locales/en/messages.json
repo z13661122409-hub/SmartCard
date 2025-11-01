@@ -1,0 +1,19 @@
+{
+  "btn_summary": { "message": "Summarize" },
+  "btn_translate": { "message": "Translate" },
+  "btn_polish":   { "message": "Polish" },
+
+  "status_processing":  { "message": "Processing…" },
+  "status_translating": { "message": "Translating…" },
+  "status_done":        { "message": "Done" },
+
+  "tip_no_translation_needed": { "message": "No translation needed (already English)." },
+
+  "panel_title": { "message": "SmartCard" },
+  "tag_summary": { "message": "Summary" },
+  "tag_translation": { "message": "Translation" },
+  "tag_polish": { "message": "Polish" },
+
+  "err_translate_failed": { "message": "Translation failed" },
+  "err_translator_unavailable": { "message": "Translator unavailable (language pack / version / hardware)" }
+}

@@ -1,0 +1,61 @@
+/* ===== 工具条：不挡字、最高层 ===== */
+#smartcard-bar{
+  position:absolute; z-index:2147483647; display:flex; gap:6px;
+  background:#111; color:#fff; padding:6px 8px; border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,.28); font-size:12px;
+  user-select:none;
+}
+#smartcard-bar button{
+  background:#222; color:#fff; border:none; padding:4px 8px;
+  border-radius:8px; cursor:pointer; line-height:1;
+}
+#smartcard-bar button:hover{ background:#333; }
+
+/* ===== 右下角结果面板 ===== */
+#smartcard-panel{
+  position:fixed; right:16px; bottom:16px; z-index:2147483647;
+  width:min(420px, 90vw); background:#0b0b0c; color:#e9e9ea;
+  border-radius:12px; box-shadow:0 12px 28px rgba(0,0,0,.35);
+  font:13px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+}
+#smartcard-panel .hdr{
+  padding:8px 12px; font-weight:600; letter-spacing:.2px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+/* 结果文本在 <pre> 中显示，允许自动换行 */
+#smartcard-panel pre {
+  margin: 6px 0 0;
+  white-space: pre-wrap;      /* 保留换行与空格，但允许自动换行 */
+  word-break: break-word;     /* 中文/长单词到边界时断行 */
+  overflow-wrap: anywhere;    /* 超长URL/Token也能断开 */
+}
+#smartcard-panel .tag{
+  display:inline-block; font-size:11px; padding:2px 8px; border-radius:999px;
+  background:#1e88e5; color:#fff; margin-bottom:6px;
+}
+#smartcard-panel .tag.err{ background:#d32f2f; }
+#smartcard-panel pre{ margin:6px 0 0; }
+
+/* 结果面板头部：左右分布，右侧是关闭按钮 */
+#smartcard-panel .hdr{
+  display:flex;
+  align-items:center;
+  justify-content:space-between; /* 标题在左，关闭在右 */
+}
+
+/* 关闭按钮 */
+#smartcard-close{
+  appearance:none;
+  border:none;
+  background:transparent;
+  color:#9aa0a6;
+  cursor:pointer;
+  font-size:18px;
+  line-height:1;
+  padding:2px 6px;
+  border-radius:6px;
+}
+#smartcard-close:hover{
+  color:#fff;
+  background:rgba(255,255,255,.08);
+}

@@ -1,0 +1,19 @@
+{
+  "btn_summary": { "message": "摘要" },
+  "btn_translate": { "message": "翻译" },
+  "btn_polish": { "message": "润色" },
+
+  "status_processing": { "message": "处理中…" },
+  "status_translating": { "message": "翻译中…" },
+  "status_done": { "message": "完成" },
+
+  "tip_no_translation_needed": { "message": "无需翻译（已是英语）" },
+
+  "panel_title": { "message": "SmartCard" },
+  "tag_summary": { "message": "摘要" },
+  "tag_translation": { "message": "翻译" },
+  "tag_polish": { "message": "润色" },
+
+  "err_translate_failed": { "message": "翻译失败" },
+  "err_translator_unavailable": { "message": "Translator 不可用（语言包/版本/硬件）" }
+}
